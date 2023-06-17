@@ -1,0 +1,9 @@
+#map {
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+
+  @media all and (max-width: 650px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+<div #map id="map"></div>
+<h2>Position Coords:</h2>
+<div *ngIf="!navError">
+  <p>Accuracy: {{navCoords?.accuracy}}</p>
+  <p>Altitude: {{navCoords?.altitude}}</p>
+  <p>AltitudeAccuracy: {{navCoords?.altitudeAccuracy}}</p>
+  <p>Heading: {{navCoords?.heading}}</p>
+  <p>Latitude: {{navCoords?.latitude}}</p>
+  <p>Longitude: {{navCoords?.longitude}}</p>
+  <p>Speed: {{navCoords?.speed}}</p>
+  <br>
+  <p>Timestamp: {{timestamp}}</p>
+</div>
+<p *ngIf="navError">Error: {{navError}}</p>
